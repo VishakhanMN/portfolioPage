@@ -1,26 +1,27 @@
 <div class="container-fluid header px-0">
-    <div class="row g-0 vh-80 d-flex flex-row bd-highlight px-3 pt-3">
-        <ul class="nav nav-pills nav-fill">
-          <li class="titleMain col">PORTFOLIO</li>
-          <li class="nav-item  col"  [ngClass]="{activatedTab: selectedTab == 'home'}" (click)="getActivatedTab('home')">
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <ul class="nav   col-md-12">
+          <li class="nav-item col-md-2" >
+            <div class="nav-link title fs-3" >PORTFOLIO</div>
+          </li>
+          <li class="nav-item  col-md-2"  [ngClass]="{activatedTab: selectedTab == 'home'}" (click)="getActivatedTab('home')">
             <a
-              class="nav-link title link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              [routerLink]="['/home']"
-              >Home</a
-            >
+              class="nav-link title link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-5"
+              [routerLink]="['/home']" id="home"
+              >Home</a>
           </li>
-          <li class="nav-item col" [ngClass]="{activatedTab: selectedTab == 'about'}" (click)="getActivatedTab('about')">
-            <a class="nav-link title" [routerLink]="['/about']">About</a>
+          <li class="nav-item col-md-2 fs-5" [ngClass]="{activatedTab: selectedTab == 'about'}" (click)="getActivatedTab('about')">
+            <a class="nav-link title" id="homeAbout" [routerLink]="['/about']">About</a>
           </li>
-          <li class="nav-item col" [ngClass]="{activatedTab: selectedTab == 'skills'}" (click)="getActivatedTab('skills')">
-            <a class="nav-link title" [routerLink]="['/skills']">Skills</a>
+          <li class="nav-item col-md-2 fs-5" [ngClass]="{activatedTab: selectedTab == 'skills'}" (click)="getActivatedTab('skills')">
+            <a class="nav-link title" id="homeSkills" [routerLink]="['/skills']">Skills</a>
           </li>
-          <li class="nav-item col" [ngClass]="{activatedTab: selectedTab == 'projects'}" (click)="getActivatedTab('projects')">
-            <a class="nav-link title" [routerLink]="['/projects']">Projects</a>
+          <li class="nav-item col-md-1 fs-5" [ngClass]="{activatedTab: selectedTab == 'projects'}" (click)="getActivatedTab('projects')">
+            <a class="nav-link title" id="homeProjects" [routerLink]="['/projects']">Projects</a>
           </li>
-          <li class="nav-item col">
-            <a class="nav-link title">Hire Me</a>
+          <li class="nav-item col-md-2 fs-5">
+            <a class="nav-link title text-end" id="HomeHireMe">Hire Me</a>
           </li>
         </ul>
-      </div>
-</div>
+        </nav>
+    </div>
