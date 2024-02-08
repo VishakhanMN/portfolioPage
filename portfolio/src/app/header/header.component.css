@@ -1,3 +1,9 @@
 #hireMe{
     text-align: right;
 }
+
+.activatedTab{
+    background-color: indigo;
+    border-radius: 11%;
+    text-align: center;
+}

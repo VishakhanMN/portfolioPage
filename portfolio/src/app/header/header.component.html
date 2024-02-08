@@ -4,22 +4,22 @@
           <li class="nav-item col-md-2" >
             <div class="nav-link title fs-3" >PORTFOLIO</div>
           </li>
-          <li class="nav-item  col-md-2"  [ngClass]="{activatedTab: selectedTab == 'home'}" (click)="getActivatedTab('home')">
+          <li class="nav-item  col-md-1"  [ngClass]="{activatedTab: selectedTab == 'home'}" (click)="getActivatedTab('home')">
             <a
               class="nav-link title link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-5"
               [routerLink]="['/home']" id="home"
               >Home</a>
           </li>
-          <li class="nav-item col-md-2 fs-5" [ngClass]="{activatedTab: selectedTab == 'about'}" (click)="getActivatedTab('about')">
+          <li class="nav-item col-md-1 fs-5" [ngClass]="{activatedTab: selectedTab == 'about'}" (click)="getActivatedTab('about')">
             <a class="nav-link title" id="homeAbout" [routerLink]="['/about']">About</a>
           </li>
-          <li class="nav-item col-md-2 fs-5" [ngClass]="{activatedTab: selectedTab == 'skills'}" (click)="getActivatedTab('skills')">
+          <li class="nav-item col-md-1 fs-5" [ngClass]="{activatedTab: selectedTab == 'skills'}" (click)="getActivatedTab('skills')">
             <a class="nav-link title" id="homeSkills" [routerLink]="['/skills']">Skills</a>
           </li>
           <li class="nav-item col-md-1 fs-5" [ngClass]="{activatedTab: selectedTab == 'projects'}" (click)="getActivatedTab('projects')">
             <a class="nav-link title" id="homeProjects" [routerLink]="['/projects']">Projects</a>
           </li>
-          <li class="nav-item col-md-2 fs-5">
+          <li class="nav-item col-md-3 fs-5">
             <a class="nav-link title text-end" id="HomeHireMe">Hire Me</a>
           </li>
         </ul>

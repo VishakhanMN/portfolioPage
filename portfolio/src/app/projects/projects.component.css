@@ -1,3 +1,11 @@
 .projectPage{
     background-color:slategray;
 }
+
+.card{
+    height: 20rem;
+}
+
+.card-body{
+    height: 10rem;
+}
